@@ -21,7 +21,7 @@ if st.button("Ringkas"):
         with st.spinner("Lagi ngeringkas..."):
             try:
                 response = client.chat.completions.create(
-                    model="openrouter/openai/gpt-3.5-turbo",
+                    model="openai/gpt-3.5-turbo",
                     messages=[
                         {"role": "system", "content": "Kamu asisten jago ngeringkas."},
                         {"role": "user", "content": f"{prompt_input}\n\n{text_input}"}
