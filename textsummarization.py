@@ -2,10 +2,8 @@ import streamlit as st
 import openai
 
 # Atur API key dan base URL OpenRouter
-openai.api_key = "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"  # pastiin diawali openrouter-
+openai.api_key = st.secrets["OPENROUTER_API_KEY"]
 openai.base_url = "https://openrouter.ai/api/v1"
-
-# Inisialisasi client
 client = openai.OpenAI(api_key=openai.api_key, base_url=openai.base_url)
 
 # UI
