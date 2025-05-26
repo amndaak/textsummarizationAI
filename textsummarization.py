@@ -2,9 +2,10 @@ import streamlit as st
 import openai
 
 # Atur API key dan base URL OpenRouter
-openai.api_key = st.secrets["OPENROUTER_API_KEY"]
-openai.base_url = "https://openrouter.ai/api/v1"
-client = openai.OpenAI(api_key=openai.api_key, base_url=openai.base_url)
+api_key = st.secrets["OPENROUTER_API_KEY"]
+base_url = "https://openrouter.ai/api/v1"
+
+client = openai.OpenAI(api_key=api_key, base_url=base_url)
 
 # UI
 st.set_page_config(page_title="Ringkas Teks via OpenRouter", layout="centered")
