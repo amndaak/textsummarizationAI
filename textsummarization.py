@@ -9,9 +9,9 @@ base_url = "https://openrouter.ai/api/v1"
 client = openai.OpenAI(api_key=api_key, base_url=base_url)
 
 st.title("📄 Ringkasan Teks Otomatis")
-st.markdown("Masukin teks panjang lo, terus tentuin mau diringkas kayak gimana!")
+st.markdown("Masukkan teks panjang yang mau diringkas, dan tentukan mau diringkas kayak gimana!")
 
-text_input = st.text_area("Masukin teks:", height=300)
+text_input = st.text_area("Masukin teks yang mau diringkas:", height=300)
 prompt_input = st.text_input("Instruksi ringkasan (contoh: 'Ringkas jadi 3 kalimat')")
 
 if st.button("Ringkas"):
@@ -32,4 +32,4 @@ if st.button("Ringkas"):
                 st.markdown("### ✨ Hasil Ringkasan:")
                 st.write(hasil)
             except Exception as e:
-                st.error(f"Gagal ngeringkas: {e}")
+                st.error(f"Gagal meringkas: {e}")
