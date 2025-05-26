@@ -11,7 +11,7 @@ client = openai.OpenAI(api_key=api_key, base_url=base_url)
 st.title("📄 Ringkasan Teks Otomatis")
 st.markdown("Masukkan teks panjang yang mau diringkas, dan tentukan mau diringkas kayak gimana!")
 
-text_input = st.text_area("Masukin teks yang mau diringkas:", height=300)
+text_input = st.text_area("Masukkan teks yang mau diringkas:", height=300)
 prompt_input = st.text_input("Instruksi ringkasan (contoh: 'Ringkas jadi 3 kalimat')")
 
 if st.button("Ringkas"):
