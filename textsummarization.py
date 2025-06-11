@@ -33,3 +33,15 @@ if st.button("Ringkas"):
                 st.write(hasil)
             except Exception as e:
                 st.error(f"Gagal meringkas: {e}")
+
+# Spacer biar ada jarak sebelum kredit
+st.markdown("###")
+st.markdown("---")
+
+# Bagian kredit
+st.markdown(
+    "<div style='text-align: center; font-size: 14px;'>"
+    "🚀 Dibuat oleh <b>Nabilla Marsha Amanda Putri (2304130081)</b> dengan bantuan <i>ChatGPT</i> & <i>OpenRouter API</i> | 2025"
+    "</div>",
+    unsafe_allow_html=True
+)
